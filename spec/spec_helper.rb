@@ -6,7 +6,7 @@ require_relative '../lib/fancy_dance.rb'
 
 RSpec::Matchers.define :have_instance_dance_methods do
   match do |actual|
-    (actual.is_a? FancyDance::InstanceMethods) || (actual.is_a? Dancer)
+    (actual.is_a? FancyDance::InstanceMethods) || (actual.is_a? Dance)
   end
 end
 
